@@ -1,0 +1,120 @@
+.page {
+  min-height: 100vh;
+  background: var(--gradient-hero);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
+}
+
+/* Logo Area */
+.logoWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  text-align: center;
+}
+
+.logoBox {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  margin-bottom: var(--spacing-sm);
+}
+
+.logoIcon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.appName {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.tagline {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+/* Button Group */
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 320px;
+}
+
+.btnPrimary,
+.btnOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btnPrimary {
+  background: white;
+  color: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btnPrimary:hover {
+  background: var(--bg-light);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btnOutline {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.btnOutline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* Footer Note */
+.footNote {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-xs);
+}
+
+@media (max-width: 480px) {
+  .appName {
+    font-size: var(--font-size-3xl);
+  }
+
+  .logoBox {
+    width: 76px;
+    height: 76px;
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,89 @@
+/* ===== CSS Variables - مركز المهارات ===== */
+:root {
+  /* ألوان أساسية */
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #1e3374;
+  --color-primary-light: #2563eb;
+  --color-secondary: #3b82f6;
+  --color-accent: #60a5fa;
+
+  /* تدرج الخلفية الرئيسية */
+  --gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+  --gradient-card: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+  /* ألوان النصوص */
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-white: #ffffff;
+  --text-light: #f1f5f9;
+
+  /* ألوان الخلفيات */
+  --bg-white: #ffffff;
+  --bg-light: #f8fafc;
+  --bg-gray: #f1f5f9;
+
+  /* ألوان الحالات */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* مستويات الكورس */
+  --level-beginner: #22c55e;
+  --level-intermediate: #f59e0b;
+  --level-advanced: #ef4444;
+
+  /* الظلال */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 2px 12px rgba(30, 58, 138, 0.08);
+
+  /* الحدود */
+  --border-color: #e2e8f0;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --border-radius-full: 9999px;
+
+  /* المسافات */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* الخطوط */
+  --font-family: 'Cairo', 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* ارتفاع السطر */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* الانتقالات */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* الـ Navbar */
+  --navbar-height: 70px;
+  --navbar-bg: rgba(255, 255, 255, 0.98);
+
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: 0 20px;
+}

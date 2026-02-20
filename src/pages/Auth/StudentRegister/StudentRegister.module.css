@@ -1,0 +1,14 @@
+/* StudentRegister uses the same module as StudentLogin */
+@import '../StudentLogin/StudentLogin.module.css';
+
+.avatarIcon {
+  font-size: 22px;
+  letter-spacing: -4px;
+}
+
+.backLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
