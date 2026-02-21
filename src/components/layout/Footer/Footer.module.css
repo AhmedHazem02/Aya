@@ -1,120 +1,173 @@
+/* ===== FOOTER ===== */
 .footer {
-  background: var(--color-primary-dark);
-  color: var(--text-light);
-  padding-top: var(--spacing-3xl);
-  margin-top: auto;
+  background: #ffffff;
+  border-top: 2px solid #eef2f7;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 0;
 }
 
 .inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: var(--spacing-2xl);
-  padding-bottom: var(--spacing-2xl);
+  grid-template-columns: 2fr 1fr 1.6fr 1fr;
+  gap: 56px;
+  padding: 96px 0 52px;
+  direction: rtl;
+  align-items: start;
 }
 
-/* Brand */
-.logo {
+/* ── Brand ── */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logoRow {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: var(--spacing-md);
-}
-
-.logoText {
-  font-size: var(--font-size-lg);
-  font-weight: 800;
-  color: white;
-}
-
-.tagline {
-  font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--spacing-lg);
-}
-
-/* Social */
-.social {
-  display: flex;
   gap: 10px;
 }
 
-.socialLink {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--border-radius-md);
-  background: rgba(255, 255, 255, 0.1);
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #1e3494;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background var(--transition-fast);
+  flex-shrink: 0;
 }
 
-.socialLink:hover {
-  background: var(--color-primary-light);
+.logoText {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
 }
 
-/* Columns */
+.tagline {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+/* ── Columns ── */
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .colTitle {
-  font-size: var(--font-size-md);
-  font-weight: 700;
-  color: white;
-  margin-bottom: var(--spacing-md);
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 18px;
 }
 
+/* Quick Links */
 .linkList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footerLink {
-  font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  color: #64748b;
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: color 0.18s ease;
 }
 
 .footerLink:hover {
-  color: white;
+  color: #1e3494;
 }
 
 /* Contact */
 .contactList {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   list-style: none;
   padding: 0;
+  margin: 0;
+  direction: rtl;
 }
 
 .contactList li {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
+  gap: 9px;
+  font-size: 14px;
+  color: #64748b;
 }
 
-/* Bottom Bar */
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3494;
+  flex-shrink: 0;
+}
+
+/* Social Buttons */
+.social {
+  display: flex;
+  gap: 10px;
+  direction: ltr;
+}
+
+.socialBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #1e3494;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.socialBtn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* ── Bottom Bar ── */
 .bottomBar {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-md) 0;
+  border-top: 1px solid #f1f5f9;
+  padding: 22px 0;
   text-align: center;
 }
 
 .bottomBar p {
-  font-size: var(--font-size-xs);
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  color: #94a3b8;
 }
 
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
     grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
+    gap: 28px;
+    padding: 48px 0 36px;
   }
 }
